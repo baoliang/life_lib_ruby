@@ -4,7 +4,7 @@ module Sort
   #计算电影得分
   def self.comput_score(date, ups, downs)
     #电影更新距离开站时间
-    t = date - Time.new(2012, 9, 10)
+    t = date - Time.new(1970, 1, 1)
     # 加分 与 减分 之差
     x = (ups.to_i - downs.to_i).abs
     #投票方向
